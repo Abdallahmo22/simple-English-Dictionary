@@ -1,0 +1,162 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #8797f4;
+}
+
+.box {
+  background-color: #fff;
+  padding: 40px 30px;
+  border-radius: 10px;
+  max-width: 90%;
+}
+
+.input-field {
+  border-radius: 6px;
+  padding: 20px 0px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+input {
+  padding: 10px;
+  outline: none;
+  border: 0;
+  border-bottom: 3px solid #8797f4;
+}
+
+input:focus {
+  box-shadow: 0 0px 5px 3px #8797f4;
+  border: none;
+  border-radius: 6px;
+}
+
+#translateBtn {
+  background-color: #8797f4;
+  color: #fff;
+  font-size: 16px;
+  letter-spacing: 1.1px;
+  text-shadow: 0px 1px 1px #000;
+  font-weight: 700;
+  padding: 10px;
+  margin-left: 15px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+#translateBtn i {
+  margin-right: 6px;
+}
+
+section {
+  display: flex;
+  justify-content: space-between;
+}
+
+h3 {
+  color: #8797f4;
+  font-size: 25px;
+  text-shadow: 0px 1px 1px #000;
+  letter-spacing: 1.5px;
+}
+
+span {
+  color: #999;
+  margin: 6px 0;
+  display: block;
+}
+
+.output-field section {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.sound {
+  padding: 10px;
+}
+
+.sound i {
+  cursor: pointer;
+  color: #8797f4;
+  font-size: 22px;
+}
+
+article {
+  box-shadow: 0 0 5px 0px #8797f4;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  margin: 15px 0;
+  max-height: 70px;
+  overflow: auto;
+  padding: 5px 10px;
+}
+
+article h4 {
+  color: #8797f4;
+  padding-bottom: 2px;
+  margin-bottom: 6px;
+  width: fit-content;
+  text-transform: capitalize;
+  text-decoration: underline;
+}
+
+article ul li span {
+  color: #8797f4;
+}
+
+.examples {
+  border-left: 3px solid #8797f4;
+  padding: 2px;
+  padding-top: 10px;
+  padding-left: 10px;
+  margin-left: 5px;
+}
+
+.ex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 35px;
+  overflow: auto;
+  max-height: 60px;
+}
+
+.ex h4 {
+  color: #8797f4;
+}
+
+.output-field {
+  display: none;
+  transition: all 0.5s;
+  animation: in-out 1.5s;
+}
+
+@keyframes in-out {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@media (min-width: 500px) {
+  .box {
+    width: unset;
+    max-width: 55%;
+  }
+
+}
+
